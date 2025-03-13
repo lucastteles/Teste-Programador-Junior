@@ -1,0 +1,110 @@
+/* 
+<section class="driveon"> 
+*/
+section.driveon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--cor-branco);
+  height: 120vh;
+  padding: 0 0 160px 0;
+}
+section.driveon .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 120px 60px 0px;
+  width: 50%;
+}
+section.driveon.animar .texto {
+  animation: textoDriveon 1.2s ease-in-out forwards;
+}
+@keyframes textoDriveon {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+section.driveon .texto p {
+  font-family: var(--light);
+  font-size: var(--f3);
+  color: var(--cor-cinza);
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+  width: 100%;
+  max-width: 450px;
+}
+section.driveon .texto .linha-topo {
+  padding-bottom: 50px;
+}
+section.driveon .texto .linha-topo img {
+  width: 120px;
+  height: 15px;
+}
+section.driveon .texto a h3 {
+  font-family: var(--semibold);
+  font-size: var(--f3);
+  margin: 50px 0 0 0;
+  color: #4087fb;
+}
+section.driveon .imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+section.driveon .imagem img.carro {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  animation: carrodriveon 30s linear infinite;
+}
+@keyframes carrodriveon {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 
+Responsivo 
+*/
+@media screen and (max-width: 1000px) {
+  section.driveon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  section.driveon .texto {
+    align-items: center;
+    text-align: center;
+    padding: 150px 30px 40px 30px;
+    width: 100%;
+  }
+  section.driveon .texto p {
+    font-size: var(--f2);
+    max-width: 350px;
+  }
+  section.driveon .imagem {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    position: relative;
+  }
+  section.driveon .imagem img.carro {
+    max-width: 350px;
+  }
+}

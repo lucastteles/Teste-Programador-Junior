@@ -1,0 +1,151 @@
+/* 
+<section class="download"> 
+*/
+section.download {
+  width: 100%;
+  background-color: var(--cor-branco);
+  background-image: url(/assets/files/images/imgFundoCelular.svg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 115vh;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 60px;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+section.download .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 120px 60px 0px;
+  width: 50%;
+  margin: 160px 0 0 0;
+}
+section.download .texto h3 {
+  font-family: var(--semibold);
+  font-size: var(--f6);
+  color: var(--cor-roxo);
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+section.download .texto .linha-topo {
+  padding-bottom: 50px;
+}
+section.download .texto .linha-topo img {
+  width: 120px;
+  height: 15px;
+}
+section.download .texto .btn-group {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 0;
+  gap: 20px;
+  transition: all 0.3s;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+section.download .texto .btn-group .teste-play {
+  height: 60px;
+  transition: transform 0.3s ease-in-out;
+}
+section.download .texto .btn-group .teste-play:hover {
+  transform: scale(1.05);
+}
+section.download .imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+section.download .imagem img.celular {
+  width: 100%;
+  max-width: 250px;
+  z-index: 2;
+  left: 30px;
+  position: absolute;
+}
+section.download .imagem img.carro {
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  z-index: 1;
+}
+section.download.animar .imagem img.carro {
+  animation: carrodownload 14s ease-in-out infinite;
+}
+@keyframes carrodownload {
+  0% {
+    filter: brightness(100%);
+    transform: translate(0, 0);
+  }
+  35% {
+    filter: brightness(110%);
+    transform: translate(-550px, 0);
+  }
+  50% {
+    filter: brightness(110%);
+    transform: translate(0, 0);
+  }
+  85% {
+    filter: brightness(110%);
+    transform: translate(0, 0);
+  }
+  100% {
+    filter: brightness(100%);
+    transform: translate(0, 0);
+  }
+}
+
+/* 
+Responsivo 
+*/
+@media screen and (max-width: 1000px) {
+  section.download {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 0 0 0;
+    justify-content: center;
+    height: 100%;
+  }
+  section.download .texto {
+    align-items: center;
+    text-align: center;
+    padding: 200px 30px 40px 30px;
+    width: 100%;
+  }
+  section.download .texto .btn-group {
+    margin: 10px 0 0 0;
+  }
+  section.download .texto .btn-group .teste-play {
+    height: 45px;
+  }
+  section.download .texto h3 {
+    font-size: var(--f5);
+    text-align: center;
+    max-width: 300px;
+  }
+  section.download .imagem {
+    position: relative;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+  }
+  section.download .imagem img.celular {
+    max-width: 200px;
+  }
+  section.download .imagem img.carro {
+    width: 100%;
+    max-width: 300px;
+    z-index: 1;
+    left: 50px;
+    top: 90px;
+    position: absolute;
+  }
+}

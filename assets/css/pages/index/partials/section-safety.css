@@ -1,0 +1,135 @@
+/* 
+<section class="safety"> 
+*/
+section.safety {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--cor-branco);
+  padding: 0 0 350px 0;
+}
+section.safety .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 30px 0px 60px 120px;
+  width: 50%;
+  position: relative;
+  top: 250px;
+}
+section.safety.animar .texto {
+  animation: textoSafety 1.2s ease-in-out forwards;
+}
+@keyframes textoSafety {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+section.safety .texto h3 {
+  font-family: var(--semibold);
+  font-size: var(--f6);
+  color: var(--cor-roxo);
+  max-width: 300px;
+  margin-bottom: 60px;
+}
+section.safety .texto .linha-topo {
+  padding-bottom: 50px;
+}
+section.safety .texto .linha-topo img {
+  width: 120px;
+  height: 15px;
+}
+section.safety .texto p {
+  font-family: var(--light);
+  font-size: var(--f3);
+  color: var(--cor-cinza);
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+  width: 100%;
+  max-width: 500px;
+  display: ruby;
+}
+section.safety .texto p span {
+  color: var(--cor-roxo);
+  font-family: var(--bold);
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  max-width: 50px;
+}
+section.safety .texto p span img {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  height: auto;
+  height: 6px;
+}
+section.safety .texto a h3 {
+  font-family: var(--semibold);
+  font-size: var(--f3);
+  margin: 20px 0 0 0;
+  color: #4087fb;
+}
+section.safety .imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+section.safety .imagem img.carro {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+/* 
+Responsivo 
+*/
+@media screen and (max-width: 1000px) {
+  section.safety {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -90px;
+    padding: 0 0 550px 0;
+  }
+  section.safety .texto {
+    align-items: center;
+    text-align: center;
+    padding: 10px 30px 240px 30px;
+    width: 100%;
+    margin: 0;
+  }
+  section.safety .texto h3 {
+    font-size: var(--f5);
+    max-width: 300px;
+  }
+  section.safety .texto p {
+    font-size: var(--f2);
+    max-width: 350px;
+  }
+  section.safety .imagem {
+    align-items: start;
+    justify-content: right;
+    width: 100%;
+  }
+  section.safety .imagem img.carro {
+    max-width: 300px;
+  }
+}

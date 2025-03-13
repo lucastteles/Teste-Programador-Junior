@@ -1,0 +1,23 @@
+/* Essas são as variáveis para usar no site e ficar mais escalável a edição das coisas */
+:root {
+  --cor-branco: #FFFFFF;
+  --cor-preto: #000000;
+
+  --cor-ciano: #2FC9D4;
+  --cor-vermelho: #FF3C76;
+  --cor-roxo: #5812A5;
+  --cor-cinza: #9795AB;
+
+
+  --light: 'WorkSans-Regular';
+  --semibold: 'WorkSans-SemiBold';
+
+
+  --f1: clamp(0.6rem, 1vw, 0.8rem);
+  --f2: clamp(0.8rem, 1vw, 1.0rem);
+  --f3: clamp(1.0rem, 1vw, 1.2rem);
+  --f4: clamp(1.2rem, 1vw, 1.5rem);
+  --f5: clamp(1.5rem, 1vw, 2.5rem);
+  --f6: clamp(2rem, 1vw, 3.5rem);
+  --f7: clamp(4.0rem, 1vw, 5.5rem);
+}

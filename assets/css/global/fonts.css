@@ -1,0 +1,15 @@
+/* Fontes */
+@font-face {
+  font-family: 'WorkSans-SemiBold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../files/fonts/WorkSans-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'WorkSans-Regular';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../files/fonts/WorkSans-Regular.ttf') format('truetype');
+}

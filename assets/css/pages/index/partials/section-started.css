@@ -1,0 +1,116 @@
+/* section.started
+*/
+section.started {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-branco);
+  padding: 100px 30px;
+}
+section.started .titulo {
+  padding-bottom: 150px;
+}
+section.started.animar .titulo {
+  animation: titulo 1.2s ease-in-out;
+}
+@keyframes titulo {
+  0% {
+    opacity: 0;
+    transform: translate(0, 250px);
+  }
+}
+section.started .titulo .linha-topo {
+  padding-bottom: 50px;
+}
+section.started .titulo .linha-topo img {
+  width: 120px;
+  height: 15px;
+}
+section.started .titulo h3 {
+  font-family: var(--semibold);
+  font-size: var(--f6);
+  color: var(--cor-roxo);
+}
+section.started .quadros {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 1100px;
+  width: 100%;
+}
+section.started.animar .quadros {
+  animation: quadros 2.5s ease-in-out forwards;
+}
+@keyframes quadros {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px) scale(0.8); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1); 
+  }
+}
+section.started .quadros .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  width: 100%;
+}
+section.started .quadros .quadro:nth-child(1) {
+  margin-left: 0px;
+}
+.img-solucao {
+  width: 200px;
+  height: 200px;
+}
+section.started .quadros .quadro h1 {
+  font-family: var(--semibold);
+  font-size: var(--f5);
+  color: var(--cor-roxo);
+  text-align: center;
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+section.started .quadros .quadro p {
+  font-family: var(--light);
+  font-size: var(--f3);
+  color: var(--cor-cinza);
+  text-align: center;
+  padding-top: 20px;
+  max-width: 200px;
+}
+
+/* RESPONSIVO
+*/
+@media screen and (max-width: 1000px) {
+  section.started {
+    padding: 0px 30px 40px 30px;
+  }
+  section.started .titulo h3 {
+    font-size: var(--f5);
+    text-align: center;
+  }
+  section.started .quadros {
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+  }
+  section.started .quadros .quadro {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  section.started .titulo {
+    padding-bottom: 0px;
+  }
+  section.started .titulo img {
+    max-width: 200px;
+  }
+  section.started .quadros .quadro p {
+    max-width: 400px;
+    font-size: var(--f2);
+  }
+}
