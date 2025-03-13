@@ -17,4 +17,4 @@ Este é o projeto desenvolvido para o processo seletivo da vaga de Programador J
 
 O site está hospedado no Netlify. Você pode acessá-lo no link abaixo:
 
-🌍 **[Acesse o site no Netlify](https://testeprogramadorjunior.netlify.app/)**
+🌍 **[Teste Programador Junior](https://testeprogramadorjunior.netlify.app/)**
